@@ -1,0 +1,133 @@
+.outer{
+    
+    width: 400px;
+    height: 400px;
+    border: 50px solid #EB3223;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc, inset 3px 3px 5px 6px #ccc;
+    box-shadow:  0px 0px 5px 6px #ccc, inset 0px 0px 5px 6px #ccc;
+    margin-left: 400px;
+    margin-top: 100px;
+
+}
+
+@keyframes mymove {
+    from {transform: rotate(0deg);
+        transform-origin: bottom right;}
+    to {transform: rotate(360deg);
+        transform-origin: bottom right;}
+  }
+
+
+.ned1{
+    border-bottom: 2px solid black;
+    margin-left: 22px;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+    -webkit-transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg); 
+    transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg);
+    position: absolute;
+    animation: mymove 60s infinite;
+    animation-timing-function: linear;
+    
+    
+    
+}
+
+.ned2{
+    border-bottom: 3px solid black;
+    margin-left: 22px;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+    -webkit-transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg); 
+    transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg);
+    position: absolute;
+    animation: mymove 3600s infinite;
+    animation-timing-function: linear;
+    
+    
+    
+}
+
+
+.ned3{
+    border-bottom: 4px solid black;
+    margin-left: 22px;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+    -webkit-transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg); 
+    transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg);
+    position: absolute;
+    animation: mymove 216000s infinite;
+    animation-timing-function: linear;
+    
+    
+    
+}
+
+
+
+
+/* .ned2{
+    border-bottom: 4px solid black;
+    width: 180px;
+    height: 180px;
+    -webkit-transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg); 
+    transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg);
+
+        position: absolute;
+        
+    transform-origin: bottom;
+    transition-duration: 1s;
+  transition-delay: 59s;
+    
+    }
+
+
+.ned3{
+    border-bottom: 4px solid black;
+    width: 180px;
+    height: 180px;
+    -webkit-transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg); 
+        
+    transform:
+        translateY(0px)
+        translateX(27px)
+        rotate(6deg);
+
+        
+    transform-origin: bottom;
+    position: absolute;
+    transition-duration: 1s;
+  transition-delay: 59s;
+} */

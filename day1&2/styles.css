@@ -1,0 +1,33 @@
+body{
+    background-color: #da7f8f;
+}
+.original{
+    margin: 50px;
+    padding: 20px 20px;
+    background-color: #faf3f3;
+    font-size: large;
+    font-style:oblique;
+}
+.h1{
+    color: rgb(57, 29, 95);
+}
+table,th,td,tr{
+    border: 2px solid black;
+}
+
+.class1{
+    height: 60px;
+    
+}
+
+img{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+
+.image{
+    position: absolute;
+    top: 110px;
+    left: 70px;
+}

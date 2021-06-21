@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        button{
+            border-radius: 50%;
+            width: 150px;
+            padding: 20px 20px;
+            margin-right: 2%;
+            margin-top: 35px;
+            background-color: white;
+            font-size: 1.4vw;
+        }
+
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        input{
+            height: 25px;
+            font-size: 1.4vw;
+            padding-left: 10px;
+            box-sizing: border-box;
+            padding-bottom: 5px;
+        }
+
+        h3{
+            font-size: 1.5vw;
+        }
+    </style>
+
+    <script>
+        function result(id){
+            var a = parseInt(document.getElementById("number1").value);
+            var b = parseInt(document.getElementById("number2").value);
+            
+            switch(id){
+                case "add":
+                    document.getElementById("ans").innerHTML = "Result: "+ (a+b);
+                    break;
+                case "subtract":
+                    document.getElementById("ans").innerHTML = "Result: "+ (a-b);
+                    break;
+                case "multiply":
+                    document.getElementById("ans").innerHTML = "Result: "+ (a*b);
+                    break;
+                case "divide":
+                    document.getElementById("ans").innerHTML = "Result: "+ (a/b);
+                    break;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 3vw;">Simple Calculator</h1>
+    <h3 style="margin-left: 25%; width: 200px;">Enter First No.:</h3>
+    <input id= "number1" type="text" style=" margin-left: 25%; outline: none; border: none; border-bottom: 2px solid black; width: 50%;">
+    <br><br>
+    <h3 style="margin-left: 25%; width: 200px;">Enter Second No.:</h3>
+    <input id= "number2" type="text" style=" margin-left: 25%; outline: none; border: none; border-bottom: 2px solid black; width: 50%;">
+
+    <h2 id="ans" style="margin-left: 25%; margin-top: 50px;"></h2>
+
+    <div id="options" style="margin-left: 25%;">
+        <button id="add" onclick="result('add')" style="border-color: green;">Add +</button>
+        <button id="subtract" onclick="result('subtract')" style="border-color: blue;">Subtract -</button>
+        <button id="multiply" onclick="result('multiply')" style="border-color: violet;">Multiply *</button>
+        <button id="divide" onclick="result('divide')" style="border-color: red;">Divide /</button>
+    </div>
+    
+</body>
+</html>
+
+

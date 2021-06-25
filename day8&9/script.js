@@ -10,7 +10,7 @@ let stats=document.querySelectorAll("span");
 console.log(stats);
 
 for(let i=0; i<48; i++){
-    btns[i].addEventListener("click", (e)=>{
+    btns[i].addEventListener("click", function(){
         if(btns[i].classList.length){
             remaining++;
             gone--;

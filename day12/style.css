@@ -1,0 +1,151 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: aliceblue;
+  overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black; 
+}
+
+.todo{
+    padding: 20px;
+    padding-bottom: 30%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    position: fixed;
+    bottom: 0;
+    /* border: 2px solid black; */
+    width: 45%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f9f9;
+    border-radius: 25px 25px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+input{
+    
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    border: 0;
+    font-size: 1.2rem;
+    padding: 20px;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+
+#add-btn{
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 0;
+    color: blue;
+    background-color: #fff;
+    font-size: 3rem;
+}
+  
+.input button:focus,
+.input button:active {
+    outline: none;
+}
+
+
+.list {
+  width: 100%;
+  display: grid;
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+
+.list > div {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.list p {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  width: 70%;
+  padding: 0 8px;
+}
+
+.btns {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btns button {
+  border: 0;
+  outline: 0;
+  background: none;
+  height: 40px;
+  width: 40px;
+  border: 2px solid silver;
+  border-radius: 5px;
+}
+
+.btns button:first-child {
+  color: green;
+  margin-right: 5px;
+}
+
+.btns button:last-child {
+  color: red;
+}
+
+
+
+
+@media (max-width: 800px) {
+  .input {
+    width: 100%;
+  }
+}
+@media (max-width: 1080px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .input{
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -34,13 +34,13 @@ button{
     font-size: large;
     font-weight: 700;
     color: blue;
-    background-color: white;
+    background-color: transparent;
     position: relative;
     left: 40%;
     margin-top: 10px;
     border-radius: 10px;
     border: 2px solid;
-
+    cursor: pointer;
 }
 
 button:hover{

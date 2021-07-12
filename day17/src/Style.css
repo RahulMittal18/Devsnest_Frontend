@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+.container{
+    margin: 0px auto;
+    height: 500px;
+    width: 600px;
+    /* border: 2px solid rgb(46, 37, 37); */
+    overflow: auto;
+    box-shadow: 2px 4px 12px -1px rgba(90,79,79,0.75);
+}
+
+
+.heading{
+    margin: 30px auto;
+    height: 50px;
+    text-align: center;
+}
+.card{
+    position: relative;
+    background-color: aqua;
+    height: 25%;
+    padding: 20px;
+    margin: 5%;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 3px 1px 8px -1px rgba(48, 175, 235, 0.75);
+}

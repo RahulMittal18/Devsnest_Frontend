@@ -1,0 +1,35 @@
+*{
+  border: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+button{
+  margin: 0% 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(88, 223, 160);
+  padding: 10px 25px;
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
+button:hover{
+  transform: scale(1.1);
+}

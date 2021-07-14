@@ -1,0 +1,92 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    margin: 0px auto;
+    height: 510px;
+    width: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 2px 4px 12px -1px rgba(90,79,79,0.75);
+}
+
+.heading{
+    margin: 30px auto;
+    height: 50px;
+}
+
+
+.fooditem{
+    position: relative;
+    background-color: rgb(147, 214, 214);
+    height: 25%;
+    padding: 15px 20px;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 3px 1px 8px -1px rgba(48, 175, 235, 0.75);
+    
+}
+
+.fooditem h1{
+    display: inline;
+}
+
+.fooditem h2{
+    padding: 20px 0px;
+}
+
+button{
+    margin-top: 8px;
+    float: right;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+
+.container::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(126, 73, 73, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(126, 73, 73, 0.3);
+	background-color: rgb(129, 120, 120);
+}
+
+p{
+    padding: 30px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+

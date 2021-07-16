@@ -22,23 +22,26 @@ function AddItemForm({ addItem }) {
 			<div className="input-box">
 				<div className="input-title">
 					<input
+                        required  //This attribute make sure that input field must be filled out before submitting the form.
+
 						type='text'
 						name='title'
 												
 						value={title}
 						onChange={e => setTitle(e.target.value)}
-						placeholder='Item name'
+						placeholder='Item Name'
                         autoComplete="off"
 					/>
 				</div>
 				<div>
 		            <input
+                        required
 						type='number'
 						name='number'
 
 						value={calorie}
 						onChange={e => setCalorie(e.target.value)}
-						placeholder='Calorie amount'
+						placeholder='Calorie Amount'
 					/>
 				</div>
 			</div>

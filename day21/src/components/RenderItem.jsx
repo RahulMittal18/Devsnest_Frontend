@@ -10,12 +10,12 @@ function RenderItem({ updateItem, removeItem, item, index }) {
 
 				{isEditMode ? (
 					<input
+                        required
 						type='text'
 						name='title'
-						id='title'
-						required
 						value={item.title}
 						onChange={e => updateItem(index, { title: e.target.value })}
+                        autoComplete="off"
 					/>
 				) : (
 					<h5 >{item.title}</h5>
@@ -24,16 +24,14 @@ function RenderItem({ updateItem, removeItem, item, index }) {
 
 				{isEditMode ? (
 					<input
+                        required
 						type='number'
 						name='calorie'
-						id='calorie'
-						required
 						value={item.calorie}
 						onChange={e => updateItem(index, { calorie: e.target.value })}
 					/>
 				) : (
 					<p >
-						{' '}
 						You have consumed {item.calorie} calories
 					</p>
 				)}
@@ -47,7 +45,7 @@ function RenderItem({ updateItem, removeItem, item, index }) {
 
 					<button	className="btn btn-main"
 						onClick={() => setIsEditMode(!isEditMode)}>
-						{isEditMode ? 'Done' : 'Edit'}
+						{isEditMode ? 'Save' : 'Edit'}
 					</button>
 				</div>
 			</div>

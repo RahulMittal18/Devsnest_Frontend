@@ -16,7 +16,7 @@ function App() {
 
   const updateItem = (index, newItem) => {
 		setItems(
-			items.map((item, i) => (i === index ? { ...item, ...newItem } : item))
+			items.map((item, i) => (i === index ? {...item, ...newItem} : item))
 		);
 	};
 

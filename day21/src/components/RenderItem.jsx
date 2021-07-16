@@ -9,13 +9,13 @@ function RenderItem({ updateItem, removeItem, item, index }) {
 			<div className="box-body">
 
 				{isEditMode ? (
-					<input
-                        required
+				  <input
+            required
 						type='text'
 						name='title'
 						value={item.title}
 						onChange={e => updateItem(index, { title: e.target.value })}
-                        autoComplete="off"
+            autoComplete="off"
 					/>
 				) : (
 					<h5 >{item.title}</h5>
@@ -24,7 +24,7 @@ function RenderItem({ updateItem, removeItem, item, index }) {
 
 				{isEditMode ? (
 					<input
-                        required
+            required
 						type='number'
 						name='calorie'
 						value={item.calorie}

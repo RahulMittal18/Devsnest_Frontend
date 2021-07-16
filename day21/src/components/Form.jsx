@@ -22,7 +22,7 @@ function AddItemForm({ addItem }) {
 			<div className="input-box">
 				<div className="input-title">
 					<input
-                        required  //This attribute make sure that input field must be filled out before submitting the form.
+            required  //This attribute make sure that input field must be filled out before submitting the form.
 
 						type='text'
 						name='title'
@@ -30,12 +30,12 @@ function AddItemForm({ addItem }) {
 						value={title}
 						onChange={e => setTitle(e.target.value)}
 						placeholder='Item Name'
-                        autoComplete="off"
+            autoComplete="off"
 					/>
 				</div>
 				<div>
-		            <input
-                        required
+		      <input
+            required
 						type='number'
 						name='number'
 

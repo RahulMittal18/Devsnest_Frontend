@@ -3,8 +3,8 @@ import { useState } from "react";
 const Meme = ({ meme, setMeme }) => {
   const [form, setForm] = useState({
     template_id: meme.id,
-    username: "RahulMittal1",
-    password: "Rahul.1234",
+    username: "", //Enter username of imgflip account
+    password: "", //Enter password of imgflip account
     boxes: [],
   });
 

@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+a:hover{
+  color: rgb(223, 191, 191);
+    
+}
+
+li {
+  font-size: 1.2rem;
+  
+}
+
+nav {
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+}
+
+.App h1 {
+  margin: 20px 0;
+}
+
+.App button {
+  padding: 8px 15px;
+  font-size: 1.1rem;
+
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(153, 255, 255);
+}
+
+.App p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  ul {
+    justify-content:space-between;
+  }
+}

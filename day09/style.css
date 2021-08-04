@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: darkgrey;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stats{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+
+.grid{
+    height: 90%;
+    width: 80%;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 5px;
+}
+
+.grid > div{
+    border: 1px solid blue;
+    background-color: black;
+}
+
+/* .grid > div:hover{
+    background-color: #E0E0E0;
+} */
+
+.active{
+    background-color: blue !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .grid{
+        height: 65%;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .grid{
+        height: 45%;
+    }
+  }

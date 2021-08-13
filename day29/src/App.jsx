@@ -2,15 +2,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { useState, useEffect } from "react";
 import SearchIcon from "@material-ui/icons/Search";
-// import HourlyData from "./components/HourlyData.jsx";
 
 function App() {
   const [place, setPlace] = useState("Charkhi Dadri");
   const [placeData, setPlaceData] = useState({});
   const [clicked, setClicked] = useState(false);
-  // const [hourly, setHourly] = useState([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  // const hours = [];
 
   useEffect(() => {
     fetch(
@@ -35,18 +32,7 @@ function App() {
         setPlaceData(data);
       });
 
-    // var current = parseInt(
-    //   (placeData.location.localtime_epoch -
-    //     placeData.forecast.forecastday[0].hour[0].time_epoch) /
-    //     3600
-    // );
-
-    // while (current < 24 && hours.length < 5) {
-    //   hours.push(current);
-    //   current += 1;
-    // }
-
-    // setHourly(hours);
+    
   };
 
   return (

@@ -11,7 +11,7 @@ function App() {
   const [input, setInput] = useState<string>("");
   return (
     <div className="App">
-      <div>
+      <div className="input">
         <input
           type="text"
           value={input}

@@ -1,5 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
+.input{
+  margin: 40px 0px;
+}
 
+.notes{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.App input{
+  height: 30px;
+  padding: 10px 20px;
+  
+}
+
+.App button{
+  height: 30px;
+  padding: 4px 8px;
+  margin-left: 20px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.notes h3,button{
+  display: inline;
+}
+
+.notes li{
+  margin: 15px 0;
+}

@@ -12,16 +12,19 @@ body {
 }
 
 .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
   padding: 8px 15px;
-  /* background-color: #0001F8; */
   color: white;
   background: #8581ff;
   background: -webkit-linear-gradient(to right, #8580ff, #8582ff);
   background: linear-gradient(to right, #8580ff, #8582ff);
 }
 
+
 .container {
-  margin: 180px auto;
+  margin: 170px auto;
   display: grid;
   height: 260px;
   width: 480px;
@@ -57,7 +60,7 @@ input:focus {
   outline: none;
 }
 
-button {
+.container button {
   width: 20%;
   font-size: large;
   font-weight: 600;
@@ -114,4 +117,42 @@ button:hover {
 
 .error h1 {
   margin-top: 120px;
+}
+
+
+.footer{
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    color: grey;
+}
+
+
+
+.footer hr{
+    width: 94%;
+    margin-left: 3%;
+}
+
+.footer i{
+    color: grey;
+    font-size: 28px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 7%;
+}
+
+
+.footer button{
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    width: 30px;
+    background-color: #f5f8ff;
+    margin-right: 10px;
 }

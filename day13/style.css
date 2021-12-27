@@ -299,10 +299,11 @@ button:hover {
     height: 130px;
   }
 
-  .warp {
+  .wrap {
     margin-bottom: -30px;
   }
   .footer {
+    position: relative;
     height: 30px;
   }
   .footer i {
@@ -316,6 +317,6 @@ button:hover {
   }
 
   .footer-content {
-    margin: 2px 5%;
+    margin: 0px 5%;
   }
 }
